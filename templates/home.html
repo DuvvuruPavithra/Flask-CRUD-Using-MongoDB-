@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Application</title>
+</head>
+<body style="background-color: lightgreen">
+    <center>
+        <h1 id="title">Student Data Form</h1>
+<div id="form-outer">
+  <p id="description">
+    To know the details of students
+  </p>
+  <form id="survey-form" method="POST" action="/data">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="firstname-label" for="firstname">First Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="firstname" id="firstname" class="input-field" placeholder="Enter your First name" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="lastname-label" for="lastname">Last Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="lastname" id="lastname" class="input-field" placeholder="Enter your Last name" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="state-label" for="state">State: </label>
+      </div>
+      <div class="rightTab">
+        <input type="state" name="state" id="state" class="input-field" required placeholder="Enter State">
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="city-label" for="city">City: </label>
+      </div>
+      <div class="rightTab">
+        <input type="city" name="address" id="city" class="input-field" required placeholder="Enter City">
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="mobilenumber-label" for="mobilenumber">Mobile Number: </label>
+      </div>
+      <div class="rightTab">
+        <input type="mobilenumber" name="mobilenumber" id="mobilenumber" min="1" max="125" class="input-field" placeholder="Enter Mobile Number" required>
+      </div>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <button id="reset" type="reset">Reset</button>
+  </form>
+</div>
+
+    </center>
+</body>
+</html>
